@@ -1,0 +1,8 @@
+08:01:22 login user= admin ip=192.168.1.10
+08:02:15 lpgin user=bob ip=192.168.1.22
+08:03:40 error password_wrong user=admin
+08:04:01 login user admin ip=192.168.1.10
+08:05:33 error sql_injection_attempt ip=10.0.0.5
+08:06:12 login user=alice ip=192.168.1.33
+08:07:45 error password_wrong user=bob
+08:08:50 warning scan_detected ip=10.0.0.5
