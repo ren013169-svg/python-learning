@@ -35,12 +35,12 @@ def mark_done():
     show_all()
     num_str = input("请输入要标记完成的编号").strip()
     if not num_str.isdigit():
-        print("请输入有效数字!")
+        print("无此项，请确认编号!")
         return
     num = int(num_str)
     index = num -1
     if index <0 or index >= len(todo_list):
-        print("无此项")
+        print("无此项，请确认编号")
         return
     old_line = todo_list[index]
     new_line=old_line.replace("[ ]","[x]",1)
@@ -55,12 +55,12 @@ def delete_todo():
     show_all()
     num_str=input("请输入要删除的编号:")
     if not num_str.isdigit():
-        print("请输入有效数字")
+        print("无此项，请确认编号")
         return
     num=int(num_str)
     index=num-1
     if index < 0 or index>=len (todo_list):
-        print("请输入有效数字!")
+        print("无此项，请确认编号!")
         return
     todo_list.pop(index)
     save_todo(todo_list)
